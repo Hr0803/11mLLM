@@ -55,16 +55,19 @@ div[data-testid="stExpander"] div[role="button"] p {
     list-style-type: disc;
     list-style-position: inside;
     text-indent: -1.5em;
-    padding-left: 1em;
-    padding-right: 3em;
-    position: relative;   /* relative position so that we can position the link absolutely */
-    margin-left: 1rem;
+    padding: 1em 3em;   /* Top and bottom 1em, left and right 3em */
+    background-color: #eff3f6; /* A softer blue shade */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);  /* subtle shadow */
+    position: relative;
+    margin-bottom: 1rem; /* Space between the boxes */
     word-break: keep-all;
 }
 
 
+
 .example-link {
-    position: absolute;   /* absolute position */
+    position: relative;   
     right: 0;            /* push it to the right */
     opacity: 0;          /* make it invisible */
     transition: opacity 0.2s; /* animation for fading in */
